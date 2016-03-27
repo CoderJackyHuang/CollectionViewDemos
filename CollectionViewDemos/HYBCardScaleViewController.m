@@ -1,49 +1,50 @@
 //
-//  HYBCardViewController.m
+//  HYBCardScaleViewController.m
 //  CollectionViewDemos
 //
-//  Created by huangyibiao on 16/3/26.
+//  Created by huangyibiao on 16/3/27.
 //  Copyright © 2016年 huangyibiao. All rights reserved.
 //
 
-#import "HYBCardViewController.h"
+#import "HYBCardScaleViewController.h"
+#import "HYBCardScaleFlowLayout.h"
 #import "HYBCardCollectionViewCell.h"
-#import "HYBCardFlowLayout.h"
+
 
 static NSString *cellIdentifier = @"CellIdentifier";
 
-@interface HYBCardViewController () <UICollectionViewDataSource>
+@interface HYBCardScaleViewController () <UICollectionViewDataSource>
 
 @end
 
-@implementation HYBCardViewController
+@implementation HYBCardScaleViewController
 
 - (void)viewDidLoad {
   [super viewDidLoad];
   
-  HYBCardFlowLayout *layout = [[HYBCardFlowLayout alloc] init];
-
+  HYBCardScaleFlowLayout *layout = [[HYBCardScaleFlowLayout alloc] init];
+  
   UICollectionView *collectionView = [[UICollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout:layout];
   [self.view addSubview:collectionView];
   [collectionView registerClass:[HYBCardCollectionViewCell class] forCellWithReuseIdentifier:cellIdentifier];
   collectionView.dataSource = self;
   self.view.backgroundColor = [UIColor whiteColor];
   collectionView.backgroundColor = [UIColor purpleColor];
-  collectionView.pagingEnabled = YES;
+//  collectionView.pagingEnabled = YES;
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-  return 1;
+  return 5;
 }
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
-  return  5;
+  return  1;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
   HYBCardCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:cellIdentifier
                                                                               forIndexPath:indexPath];
-  [cell configWithImage:[NSString stringWithFormat:@"img%ld.jpg", indexPath.section + 1]];
+  [cell configWithImage:[NSString stringWithFormat:@"img%ld.jpg", indexPath.item + 1]];
   
   return cell;
 }

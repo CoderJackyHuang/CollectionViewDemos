@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "HYBGridViewController.h"
 #import "HYBCardViewController.h"
+#import "HYBCardScaleViewController.h"
 
 #define kCellIdentifier @"GITHUB Name CoderJackyHuang"
 
@@ -40,6 +41,7 @@
   
   self.datasource = @[[[HYBGridViewController alloc] initWithTitle:@"网格布局"],
                       [[HYBCardViewController alloc] initWithTitle:@"卡片动画1"],
+                      [[HYBCardScaleViewController alloc] initWithTitle:@"卡片动画2"],
                       ];
   [self.collectionView reloadData];
   self.collectionView.backgroundColor = [UIColor whiteColor];

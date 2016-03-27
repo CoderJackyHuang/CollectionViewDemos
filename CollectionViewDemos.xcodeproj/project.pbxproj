@@ -16,6 +16,12 @@
 		691CD2B81CA6AFFD00E4E8BD /* HYBCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 691CD2B71CA6AFFD00E4E8BD /* HYBCardViewController.m */; };
 		691CD2B91CA6AFFD00E4E8BD /* HYBCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 691CD2B71CA6AFFD00E4E8BD /* HYBCardViewController.m */; };
 		691CD2BA1CA6AFFD00E4E8BD /* HYBCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 691CD2B71CA6AFFD00E4E8BD /* HYBCardViewController.m */; };
+		691CD2C31CA7816700E4E8BD /* HYBCardScaleFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 691CD2C21CA7816700E4E8BD /* HYBCardScaleFlowLayout.m */; };
+		691CD2C41CA7816700E4E8BD /* HYBCardScaleFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 691CD2C21CA7816700E4E8BD /* HYBCardScaleFlowLayout.m */; };
+		691CD2C51CA7816700E4E8BD /* HYBCardScaleFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 691CD2C21CA7816700E4E8BD /* HYBCardScaleFlowLayout.m */; };
+		691CD2C81CA7819400E4E8BD /* HYBCardScaleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 691CD2C71CA7819400E4E8BD /* HYBCardScaleViewController.m */; };
+		691CD2C91CA7819400E4E8BD /* HYBCardScaleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 691CD2C71CA7819400E4E8BD /* HYBCardScaleViewController.m */; };
+		691CD2CA1CA7819400E4E8BD /* HYBCardScaleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 691CD2C71CA7819400E4E8BD /* HYBCardScaleViewController.m */; };
 		69573D571C87261C00C8F041 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 69573D561C87261C00C8F041 /* main.m */; };
 		69573D5A1C87261C00C8F041 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 69573D591C87261C00C8F041 /* AppDelegate.m */; };
 		69573D5D1C87261C00C8F041 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69573D5C1C87261C00C8F041 /* ViewController.m */; };
@@ -98,6 +104,10 @@
 		691CD2B21CA6AF8500E4E8BD /* HYBCardCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYBCardCollectionViewCell.m; sourceTree = "<group>"; };
 		691CD2B61CA6AFFD00E4E8BD /* HYBCardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYBCardViewController.h; sourceTree = "<group>"; };
 		691CD2B71CA6AFFD00E4E8BD /* HYBCardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYBCardViewController.m; sourceTree = "<group>"; };
+		691CD2C11CA7816700E4E8BD /* HYBCardScaleFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYBCardScaleFlowLayout.h; sourceTree = "<group>"; };
+		691CD2C21CA7816700E4E8BD /* HYBCardScaleFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYBCardScaleFlowLayout.m; sourceTree = "<group>"; };
+		691CD2C61CA7819400E4E8BD /* HYBCardScaleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYBCardScaleViewController.h; sourceTree = "<group>"; };
+		691CD2C71CA7819400E4E8BD /* HYBCardScaleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYBCardScaleViewController.m; sourceTree = "<group>"; };
 		69573D521C87261C00C8F041 /* CollectionViewDemos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollectionViewDemos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69573D561C87261C00C8F041 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		69573D581C87261C00C8F041 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -174,6 +184,17 @@
 			name = "Demo2-CardLayout";
 			sourceTree = "<group>";
 		};
+		691CD2C01CA7812700E4E8BD /* Demo3-CardLayout-scale */ = {
+			isa = PBXGroup;
+			children = (
+				691CD2C11CA7816700E4E8BD /* HYBCardScaleFlowLayout.h */,
+				691CD2C21CA7816700E4E8BD /* HYBCardScaleFlowLayout.m */,
+				691CD2C61CA7819400E4E8BD /* HYBCardScaleViewController.h */,
+				691CD2C71CA7819400E4E8BD /* HYBCardScaleViewController.m */,
+			);
+			name = "Demo3-CardLayout-scale";
+			sourceTree = "<group>";
+		};
 		69573D491C87261C00C8F041 = {
 			isa = PBXGroup;
 			children = (
@@ -197,6 +218,7 @@
 		69573D541C87261C00C8F041 /* CollectionViewDemos */ = {
 			isa = PBXGroup;
 			children = (
+				691CD2C01CA7812700E4E8BD /* Demo3-CardLayout-scale */,
 				691CD2AB1CA6AF4300E4E8BD /* Demo2-CardLayout */,
 				69573D9D1C87BE5400C8F041 /* images */,
 				69573D881C8726A300C8F041 /* Demo1-GridCollectionView */,
@@ -442,6 +464,7 @@
 				691CD2B31CA6AF8500E4E8BD /* HYBCardCollectionViewCell.m in Sources */,
 				69573D901C87306A00C8F041 /* HYBGridViewController.m in Sources */,
 				691CD2AE1CA6AF6700E4E8BD /* HYBCardFlowLayout.m in Sources */,
+				691CD2C31CA7816700E4E8BD /* HYBCardScaleFlowLayout.m in Sources */,
 				69573D951C8731AD00C8F041 /* HYBGridModel.m in Sources */,
 				69573D5D1C87261C00C8F041 /* ViewController.m in Sources */,
 				69573D5A1C87261C00C8F041 /* AppDelegate.m in Sources */,
@@ -449,6 +472,7 @@
 				69573D571C87261C00C8F041 /* main.m in Sources */,
 				69573D9A1C8731CB00C8F041 /* HYBGridCell.m in Sources */,
 				69573D8B1C87304400C8F041 /* HYBBaseViewController.m in Sources */,
+				691CD2C81CA7819400E4E8BD /* HYBCardScaleViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -458,8 +482,10 @@
 			files = (
 				69573D701C87261C00C8F041 /* CollectionViewDemosTests.m in Sources */,
 				69573D9B1C8731CB00C8F041 /* HYBGridCell.m in Sources */,
+				691CD2C41CA7816700E4E8BD /* HYBCardScaleFlowLayout.m in Sources */,
 				69573D8C1C87304400C8F041 /* HYBBaseViewController.m in Sources */,
 				69573D911C87306A00C8F041 /* HYBGridViewController.m in Sources */,
+				691CD2C91CA7819400E4E8BD /* HYBCardScaleViewController.m in Sources */,
 				69573D961C8731AD00C8F041 /* HYBGridModel.m in Sources */,
 				691CD2AF1CA6AF6700E4E8BD /* HYBCardFlowLayout.m in Sources */,
 				691CD2B91CA6AFFD00E4E8BD /* HYBCardViewController.m in Sources */,
@@ -473,8 +499,10 @@
 			files = (
 				69573D7B1C87261C00C8F041 /* CollectionViewDemosUITests.m in Sources */,
 				69573D9C1C8731CB00C8F041 /* HYBGridCell.m in Sources */,
+				691CD2C51CA7816700E4E8BD /* HYBCardScaleFlowLayout.m in Sources */,
 				69573D8D1C87304400C8F041 /* HYBBaseViewController.m in Sources */,
 				69573D921C87306A00C8F041 /* HYBGridViewController.m in Sources */,
+				691CD2CA1CA7819400E4E8BD /* HYBCardScaleViewController.m in Sources */,
 				69573D971C8731AD00C8F041 /* HYBGridModel.m in Sources */,
 				691CD2B01CA6AF6700E4E8BD /* HYBCardFlowLayout.m in Sources */,
 				691CD2BA1CA6AFFD00E4E8BD /* HYBCardViewController.m in Sources */,
