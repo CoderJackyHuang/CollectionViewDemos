@@ -10,6 +10,7 @@
 #import "HYBGridViewController.h"
 #import "HYBCardViewController.h"
 #import "HYBCardScaleViewController.h"
+#import "HYBCardVeticalScaleController.h"
 
 #define kCellIdentifier @"GITHUB Name CoderJackyHuang"
 
@@ -40,8 +41,9 @@
           forCellWithReuseIdentifier:kCellIdentifier];
   
   self.datasource = @[[[HYBGridViewController alloc] initWithTitle:@"网格布局"],
-                      [[HYBCardViewController alloc] initWithTitle:@"卡片动画1"],
-                      [[HYBCardScaleViewController alloc] initWithTitle:@"卡片动画2"],
+                      [[HYBCardViewController alloc] initWithTitle:@"旋转水平卡片"],
+                      [[HYBCardScaleViewController alloc] initWithTitle:@"缩放水平卡片"],
+                      [[HYBCardVeticalScaleController alloc] initWithTitle:@"缩放竖直卡片"],
                       ];
   [self.collectionView reloadData];
   self.collectionView.backgroundColor = [UIColor whiteColor];

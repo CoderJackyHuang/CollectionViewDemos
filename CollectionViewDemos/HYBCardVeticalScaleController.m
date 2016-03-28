@@ -1,28 +1,28 @@
 //
-//  HYBCardScaleViewController.m
+//  HYBCardVeticalScaleController.m
 //  CollectionViewDemos
 //
 //  Created by huangyibiao on 16/3/27.
 //  Copyright © 2016年 huangyibiao. All rights reserved.
 //
 
-#import "HYBCardScaleViewController.h"
-#import "HYBCardScaleFlowLayout.h"
+#import "HYBCardVeticalScaleController.h"
 #import "HYBCardCollectionViewCell.h"
-
+#import "HYBCardVerticalScaleLayout.h"
 
 static NSString *cellIdentifier = @"CellIdentifier";
 
-@interface HYBCardScaleViewController () <UICollectionViewDataSource>
+@interface HYBCardVeticalScaleController () <UICollectionViewDataSource>
 
 @end
 
-@implementation HYBCardScaleViewController
+@implementation HYBCardVeticalScaleController
 
 - (void)viewDidLoad {
   [super viewDidLoad];
   
-  HYBCardScaleFlowLayout *layout = [[HYBCardScaleFlowLayout alloc] init];
+
+  HYBCardVerticalScaleLayout *layout = [[HYBCardVerticalScaleLayout alloc] init];
   
   UICollectionView *collectionView = [[UICollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout:layout];
   [self.view addSubview:collectionView];
