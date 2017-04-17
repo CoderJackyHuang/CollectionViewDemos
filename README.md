@@ -2,7 +2,7 @@
 
 UIColectionView学习demo集合，配有博文讲解！
 
-#专题文章
+# 专题文章
 
 * [Demo1:CollectionView网格布局](http://www.henishuo.com/collectionview-grid-layout/)
 * [Demo1:CollectionView列表性能优化](http://www.henishuo.com/collectionview-performace/)
